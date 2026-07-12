@@ -1,0 +1,156 @@
+# HTML Junk
+*.html
+*.doctree
+*inheritance*
+*_build*
+*.js
+*.css
+*.json
+*.htm
+htmlcov
+
+# Other
+*.pyc
+*.pyd
+*.exe
+*.whl
+*.dll
+*.log
+*.rar
+*.out
+*.log
+*.tar.gz 
+*.zip
+*.csv
+*.pdf
+*.h5
+*.gz
+*.json
+
+# C extensions
+*.so
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# WingIDE
+*.wpr
+*.wpu
+
+# Nastran
+*test_bdf.dat
+*test_bdf.bdf
+*test_op2.bdf
+*test_op2.f06
+*test_op2.op2
+*test_f06.f06
+*test_f06.op2
+*.bdf_out
+*.dat_out
+*.f04
+*.plt
+*.ses.*
+*.jou
+*.log.*
+*.op2.*
+*.f06.*
+*.err
+*.rej
+*.db
+*.asg
+*.debug.f06
+
+# VTK
+*.vtu
+
+# Tecplot
+*.plt
+*.mcr
+
+# GMesh
+*.bb
+*.mesh
+*.gis
+*.medit
+
+# packages
+*structMan*
+*CoFE*
+
+.mypy_cache
+/pyNastran/env
+.idea/*
+*/.ipynb_checkpoints/*
+*checkpoint.ipynb
+
+# virtualenvs
+*/tcl/*
+*/Include/*
+*/Scripts/*
+*.png
+*.npy
+*.bdf
+*.f06
+*.op2
+data_OD/NastranBDF/BDF_file_0222.lis
+data_OD/NastranBDF/BDF_file_0222_f.fem
+data_OD/NastranBDF/BDF_file_0222_s.sim
+data_OD/NastranBDF/BDF_file_0223.lis
+*.fem
+*.dat
+*.diag
+*.sim
+*.lis
+*.prt
+data_OD/DensityFunction/img_0000.png
+*.png
+*.bdf
+*.asm
+*.pch
+*.bdf
+*.bdf
+*.odstl
+*.bdf
+*.bdf
+OD3.bdf
+*.bdf
+data_OD_ModelElaboration/TestWithNXNastranManually/V3/bulk.f04.1
+data_OD/TestWithNXNastranManually/V3/bulk.nas
+data_OD/TestWithNXNastranManually/sim1.sim
+data_OD/TestWithNXNastranManually/sim1-solution_1.diag
+data_OD/TestWithNXNastranManually/model1.prt
+data_OD/TestWithNXNastranManually/fem1_i.prt
+data_OD/TestWithNXNastranManually/fem1.fem
+*.svg
+*.tif
+*.bat
+*.txt
+*.bdf
+*.2
+*.png
+*.fem
