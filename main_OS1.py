@@ -42,7 +42,7 @@ def to_optimize(x0):
 
     tic = time.time()
     cmd = sys.executable
-    root_path = "C:/Users/olduca/PycharmProjects/2DCellularOptimization"
+    root_path = os.getcwd()
 
     dim_x = 170
     dim_y = 170
@@ -51,8 +51,8 @@ def to_optimize(x0):
     path, dirs, files = next(os.walk(root_path + '/data/DensityFunction'))
     n_files = len(files)
 
-    path_dots = "./data/Voronois/img_" + str(n_files).zfill(4) + "-stipple.npy"
-    path_img = "./data/WVS/img_" + str(n_files).zfill(4) + "-stipple.png"
+    path_dots = root_path + "/data/Voronois/img_" + str(n_files).zfill(4) + "-stipple.npy"
+    path_img = root_path + "/data/WVS/img_" + str(n_files).zfill(4) + "-stipple.png"
 
     perimeter = [[-85, -85], [85, -85], [85, 85], [-85, 85]]
     x, y = zip(*perimeter)
@@ -63,7 +63,7 @@ def to_optimize(x0):
 
     # 2. **Stippling**
     # Weighted Voronoi Stippling
-    os.system(cmd + " " + "./stippler.py ./data/DensityFunction/img_" + str(n_files).zfill(4) + ".png --save \
+    os.system(cmd + " " + root_path + "/stippler.py ./data/DensityFunction/img_" + str(n_files).zfill(4) + ".png --save \
     --n_point 320 --n_iter 100 --pointsize 25 25 --figsize 6 \
     --threshold 255 --force") # --interactive is off --force
 

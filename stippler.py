@@ -141,9 +141,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     filename = args.filename
+    print(filename)
     density = np.asarray(Image.open(filename).convert('L'))
-    #scipy.misc.fromimage(Image.open(filename), flatten=True, mode='L')
-    #density = imageio.imread(filename) #, flatten=True, mode='L')
 
     # We want (approximately) 500 pixels per voronoi region
     zoom = (args.n_point * 500) / (density.shape[0]*density.shape[1]) # OD
