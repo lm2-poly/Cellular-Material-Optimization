@@ -1,0 +1,92 @@
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$*                    Simcenter v2008.0.0.1721 Translator
+$*                    for Simcenter Nastran version 2022.1
+$*
+$*             FEM FILE: C:\Users\olduca\PycharmProjects\2DCellularOptimization\data\NastranBDF\BDF_file_0000_f.fem
+$*             SIM FILE: C:\Users\olduca\PycharmProjects\2DCellularOptimization\data\NastranBDF\BDF_file_0000_s.sim
+$*        ANALYSIS TYPE: Structural
+$*        SOLUTION NAME: BDF_file
+$*        SOLUTION TYPE: SOL 101 Linear Statics
+$*
+$*    SOLVER INPUT FILE: x.dat
+$*        CREATION DATE: 13-Apr-2022
+$*        CREATION TIME: 12:52:04
+$*             HOSTNAME: duchesne
+$*      NASTRAN LICENSE: Desktop Bundle
+$*
+$*                UNITS: Meter (newton)
+$*                      ... LENGTH : meter
+$*                      ... TIME   : sec
+$*                      ... MASS   : kilogram (kg)
+$*                      ... TEMPERATURE : deg Celsius
+$*                      ... FORCE  : newton (N)
+$*                      ... THERMAL ENERGY : N-m (joule)
+$*
+$* REMARQUE IMPORTANTE:
+$*     Cette bannière a été générée par Simcenter; la modification de ces  
+$*     informations risque de compromettre le pré et le post-traitement des résultats
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$* FILE MANAGEMENT
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$* EXECUTIVE CONTROL
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+ID,NASTRAN,bulk
+SOL 101
+CEND
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$* CASE CONTROL
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+ECHO = UNSORT
+LOAD = 200
+BCSET = 200
+OUTPUT
+DISPLACEMENT(PLOT,REAL) = ALL
+SPCFORCES(PLOT,REAL) = ALL
+STRESS(PLOT,REAL,VONMISES,CENTER) = ALL
+$*  Step: Subcase - Static Loads 1
+SUBCASE 1
+  LABEL = SUBCASE - STATIC LOADS 1
+  SPC = 201
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+$* BULK DATA
+$*
+$*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$*
+BEGIN BULK
+$*
+$* SOLUTION CARDS
+$*
+BCTADD       200     201
+$*  Simulation Object: Face Contact(1)
+BCTSET       201       1       2  0.0000  0.00000.005000       1
+DESC           1Face Contact(1) 
+$*
+$* PARAM CARDS
+$*
+PARAM      K6ROT100.0000
+PARAM     OIBULK     YES
+PARAM    OMACHPR     YES
+PARAM       POST      -2
+PARAM    POSTEXT     YES
+PARAM    UNITSYS     N-M
+$*
+$* GRID CARDS
+$*
