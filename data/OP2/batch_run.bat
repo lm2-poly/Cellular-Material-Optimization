@@ -1,0 +1,1 @@
+"C:\Program Files\Siemens\Simcenter3D_2020.2\NXNASTRAN\bin\nastranw.exe" "C:\Users\olduca\PycharmProjects\2DCellularOptimization\data\BDF\BDF_file_0024.bdf" scr=yes old=no delete=f04,log,xdb
