@@ -158,9 +158,6 @@ params = [max_nb_of_evaluations, dimension, input_type,
           "NB_THREADS_OPENMP 1", "QUAD_MODEL_SEARCH TRUE", "EVAL_OPPORTUNISTIC FALSE", "INITIAL_MESH_SIZE * 0.25",
           "MIN_MESH_SIZE * 0.01", "SEED 0", "CS_OPTIMIZATION TRUE"]
 
-# "INITIAL_MESH_SIZE * 63.75", gives 100... wtf is this mesh... and min mesh size was 0.5
-#          "DISPLAY_DEGREE 2", "BB_OUTPUT_TYPE OBJ", "DISPLAY_ALL_EVAL TRUE", "DISPLAY_STATS BBE OBJ (SOL)"] "ANISOTROPY_FACTOR 0.5" "CS_OPTIMIZATION TRUE"
-
 
 # Important : PyNomad strictly minimizes the bb function
 PyNomad.optimize(bb_pynomad, x0, lb, ub, params)
